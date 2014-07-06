@@ -19,7 +19,7 @@ public class main
 		{
 			
 			
-			if(points == 10)
+			if(Points == 10)
 			break;
 			
 			int a = (int) (Math.random()*10+1);
@@ -48,24 +48,41 @@ public class main
 		
 		
 		}
-		 
+		
+		 	
+		   
+		if(Fehler == true)  
+		{
+			 
 		JFrame fenster = new JFrame("Mathe");
 		    
 		   
 		fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		 	
-		   
-		if(Fehler == true)   
 		JLabel label = new JLabel("Du hast einen Fehler gemacht! \nDeine Punkte: " + Points, JLabel.CENTER);
-		else
-		JLabel label = new JLabel("Du hast volle 10 Punkte!", JLabel.CENTER);
-		  
+		
 		fenster.getContentPane().add(label);
-		 
-		   
 		fenster.setSize(300, 200);
 		 
 		   
 		fenster.setVisible(true);
+		}
+		else
+		{
+			JFrame fenster = new JFrame("Mathe");
+		    
+			   
+			fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JLabel label = new JLabel("Du hast volle 10 Punkte und somit Gewonnen!", JLabel.CENTER);
+		fenster.getContentPane().add(label);
+		fenster.setSize(300, 200);
+		 
+		   
+		fenster.setVisible(true);
+		}
+		  
+		
+		 
+		   
+		
 	}
 }
