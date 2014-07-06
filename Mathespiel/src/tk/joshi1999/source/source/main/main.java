@@ -1,7 +1,8 @@
 package tk.joshi1999.source.source.main;
 import javax.swing.*;
 
-
+//Todo: All with Textures
+//		delete Exception(if you write a letter)
 
 public class main 
 {
@@ -22,14 +23,14 @@ public class main
 			if(Points == 10)
 			break;
 			
-			int a = (int) (Math.random()*10+1);
-			int b = (int) (Math.random()*10+1);
+			int a = (int) (Math.random()*10+1); //create random number for multiplikation
+			int b = (int) (Math.random()*10+1); //create random number for multiplication
 			
-			l1 = a*b;
+			l1 = a*b; // Computer multiplikates and save
 		
 		
 		
-			String s = javax.swing.JOptionPane.showInputDialog( a+"*"+b+"= ");
+			String s = javax.swing.JOptionPane.showInputDialog( a+"*"+b+"= "); //writing question
 			l = Integer.parseInt(s);
 			
 		
@@ -37,7 +38,7 @@ public class main
 		
 			if(l == l1)
 			{
-				javax.swing.JOptionPane.showInputDialog("Richtig!");
+				javax.swing.JOptionPane.showInputDialog("Richtig!"); // ToDo: Without Input
 				Points++;
 			}
 			else
