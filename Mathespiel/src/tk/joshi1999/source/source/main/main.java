@@ -23,8 +23,8 @@ public class main
 			if(Points == 10)
 			break;
 			
-			int a = (int) (Math.random()*10+1); //create random number for multiplikation
-			int b = (int) (Math.random()*10+1); //create random number for multiplication
+			int a = (int) (Math.random()*100); //create random number for multiplikation
+			int b = (int) (Math.random()*100); //create random number for multiplication
 			
 			l1 = a*b; // Computer multiplikates and save
 		
