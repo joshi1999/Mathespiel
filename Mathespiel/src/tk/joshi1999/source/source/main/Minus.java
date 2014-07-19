@@ -5,11 +5,10 @@ import javax.swing.JLabel;
 
 public class Minus 
 {
-	public void Minus()
+	public static int Minus(int punkte)
 	{
 		int l;
 		int l1;
-		int Points = 0;
 		boolean Fehler = false;
 		
 		
@@ -18,11 +17,11 @@ public class Minus
 		{
 			
 			
-			if(Points == 10)
+			if(punkte == 10)
 			break;
 			
-			int b = (int) (Math.random()*1001); //create random number for multiplikation
-			int a = (int) (Math.random()*1001 + b); //create random number for multiplication
+			int b = (int) (Math.random()*1001); //create random number for -
+			int a = (int) (Math.random()*1001 + b); //create random number for -
 			
 			l1 = a-b; // Computer multiplikates and save
 		
@@ -37,7 +36,7 @@ public class Minus
 			if(l == l1)
 			{
 				javax.swing.JOptionPane.showInputDialog("Richtig!"); // ToDo: Without Input
-				Points++;
+				punkte++;
 			}
 			else
 			{
@@ -57,7 +56,7 @@ public class Minus
 		    
 		   
 		fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		JLabel label = new JLabel("Du hast einen Fehler gemacht! \nDeine Punkte: " + Points, JLabel.CENTER);
+		JLabel label = new JLabel("Du hast einen Fehler gemacht! \nDeine Punkte: " + punkte, JLabel.CENTER);
 		
 		fenster.getContentPane().add(label);
 		fenster.setSize(300, 200);
@@ -71,12 +70,13 @@ public class Minus
 		    
 			   
 			fenster.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		JLabel label = new JLabel("Du hast volle 10 Punkte und somit Gewonnen!", JLabel.CENTER);
+		JLabel label = new JLabel("Du hast dieses Kapitel abgeschlossen! Punkte: " + punkte, JLabel.CENTER);
 		fenster.getContentPane().add(label);
 		fenster.setSize(300, 200);
 		 
 		   
 		fenster.setVisible(true);
 		}
+		return punkte;
 	}
 }
