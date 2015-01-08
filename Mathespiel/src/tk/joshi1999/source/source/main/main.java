@@ -21,7 +21,7 @@ public class main
 		
 		
 		
-		System.out.println("Deine erreichten Punkte: " + punkte); // zu einem fenster ändern
+		System.out.println("Deine erreichten Punkte: " + punkte); // edit to window
 		
 	}
 }
