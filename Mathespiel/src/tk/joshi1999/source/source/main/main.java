@@ -2,6 +2,7 @@ package tk.joshi1999.source.source.main;
 import javax.swing.*;
 
 import tk.joshi1999.source.source.math.*;
+import tk.joshi1999.source.source.client.*;
 
 //Todo: All with Textures
 //		delete Exception(if you write a letter)
@@ -13,8 +14,9 @@ import tk.joshi1999.source.source.math.*;
 
 public class main{
 	public static void main(String args[]){
-		int punkte = 0;
+		int punkte = 10;
 		int level = 2;
+		
 		
 		math.math((int) punkte, (int) level);
 		
